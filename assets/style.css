@@ -1,0 +1,153 @@
+/* Grundstile, die auf alle Bildschirmgrößen angewendet werden */
+html, body{
+    background: linear-gradient(#0e101d 0%, #0098d8 50%, #f9e692 100%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 95.8vh;
+}
+
+header h1{
+    text-align: center;
+    font-size: 5rem;
+    color: #f9e692;
+    padding-top: 2rem;
+}
+
+header .container{
+    display: flex;
+    margin-top: 17vh;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+
+header .container img{
+    max-height: 400px;
+}
+
+header .container p{
+    font-size: larger;
+    margin: 1rem;
+    max-width: 25vw;
+}
+
+#top_down_select{
+    position:fixed;
+    top: 50%;
+    right: 8rem;
+    transform: translate(0,-50%);
+    background-color: rgb(14, 16, 29, 0.8);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    text-align: center;
+}
+
+
+#headline{
+    font-size: 2rem;
+    color: #f9e692;
+}
+
+.artists ul{
+    list-style: none;
+}
+
+.artists ul li{
+    margin-top: 0.9rem;
+}
+
+.artists ul li a{
+    font-size: larger;
+    color: #0098d8;
+    transition: all 300ms;
+}
+
+.artists ul li a:hover{
+    color: #95d4e8;
+}
+
+.thanks{
+    margin-top: 2rem;
+}
+
+.thanks a{
+    color: #0098d8;
+    font-size: large;
+    transition: all 300ms;
+}
+
+.thanks a:hover{
+    color: #95d4e8;
+}
+
+footer {
+    margin-bottom: 0;
+    background-color: #95d4e8;
+    color: #111625;
+    text-align: center;
+    padding: 1vh;
+}
+
+/* Media Queries für Tablet-Bildschirme (z.B. iPad) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    header .container{
+        justify-content: center;
+    align-items: center;
+        display: unset;
+        text-align: center;
+    }
+    header .container p {
+        font-size:x-large;
+        max-width: 90vw;
+    }
+    header .container img {
+        max-height: 500px;
+        display: block;
+        margin: auto;
+    }
+    #top_down_select {
+        position: unset;
+        margin-top: 15vh;
+        padding: 2rem;
+        border-radius: 0;
+    }
+}
+
+/* Media Queries für Mobilgeräte (z.B. iPhone) */
+@media screen and (max-width: 767px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    header .container{
+        justify-content: center;
+    align-items: center;
+        display: unset;
+        text-align: center;
+    }
+    header .container p {
+        font-size: medium;
+        max-width: 90vw;
+    }
+    header .container img {
+        max-height: 300px;
+        display: block;
+margin: auto;
+    }
+    #top_down_select {
+        position: unset;
+        margin-top: 15vh;
+        padding: 2rem;
+        border-radius: 0;
+    }
+}
